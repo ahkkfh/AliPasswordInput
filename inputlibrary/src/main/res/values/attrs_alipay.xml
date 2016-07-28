@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AliPasswordEditText">
+        <!--alipay show dot count-->
+        <!--显示多少个格子-->
+        <attr name="payEdit_count" format="integer" />
+        <!--alipay editText backgroud-->
+        <!--密码框的背景颜色-->
+        <attr name="payEdit_backgroud" format="color|reference" />
+        <!--alipay editText separation line color-->
+        <!--每个格子的分割线颜色-->
+        <attr name="payEdit_lineColor" format="color|reference" />
+        <!--alipay editText dot color-->
+        <attr name="payEdit_dotColor" format="color|reference" />
+        <!--alipay editText lattice lenght-->
+        <attr name="payEdit_latticeLenght" format="dimension" />
+        <!--alipay editText corners Radius -->
+        <attr name="payEdit_cornersRadius" format="dimension" />
+    </declare-styleable>
+</resources>
