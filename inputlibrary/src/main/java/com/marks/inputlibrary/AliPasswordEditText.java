@@ -72,6 +72,7 @@ public class AliPasswordEditText extends View {
         mDotColor = a.getColor(R.styleable.AliPasswordEditText_payEdit_dotColor, Color.GRAY);//获取圆点颜色
         size = a.getDimensionPixelOffset(R.styleable.AliPasswordEditText_payEdit_latticeLenght, DEFAULT_LATTICE_LENGHT);//获取每格的边长
         mRoundRadius = a.getDimensionPixelOffset(R.styleable.AliPasswordEditText_payEdit_cornersRadius, DEFAULT_RADIUS);//获取外层边框弧度
+        a.recycle();
         initPaint();//初始化画笔
         this.setOnKeyListener(new MyKeyListener());//设置键盘监听
     }
