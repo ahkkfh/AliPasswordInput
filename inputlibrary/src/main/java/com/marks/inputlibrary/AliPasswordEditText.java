@@ -217,6 +217,9 @@ public class AliPasswordEditText extends View {
         public boolean onKey(View view, int code, KeyEvent keyEvent) {
             if (keyEvent.getAction() == KeyEvent.ACTION_DOWN) {//监听键盘输入
                 Log.i("lbxx", "down----code==" + code);
+                if (keyEvent.isShiftPressed()) {//处理*#的问题
+                    return false;
+                }
                 if (code >= KeyEvent.KEYCODE_0 && code <= KeyEvent.KEYCODE_9) {//只处理数字
                     if (resultList.size() < count) {//判断是否输入最大输入值
                         resultList.add(code - 7);//-7是因为0的按钮是keycode值为7
