@@ -216,6 +216,7 @@ public class AliPasswordEditText extends View {
         @Override
         public boolean onKey(View view, int code, KeyEvent keyEvent) {
             if (keyEvent.getAction() == KeyEvent.ACTION_DOWN) {//监听键盘输入
+                Log.i("lbxx", "down----code==" + code);
                 if (keyEvent.isShiftPressed()) {//处理*#的问题
                     return false;
                 }
